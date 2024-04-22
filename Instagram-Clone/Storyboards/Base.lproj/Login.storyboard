@@ -23,6 +23,7 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Instagram Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ei1-Yq-igr">
                                         <rect key="frame" x="0.0" y="0.0" width="398" height="49"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Nyj-dW-1gH">
                                         <rect key="frame" x="0.0" y="89" width="398" height="261.66666666666669"/>
@@ -185,6 +186,7 @@
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Instagram Logo" translatesAutoresizingMaskIntoConstraints="NO" id="PzD-EO-izZ">
                                                                 <rect key="frame" x="104" y="0.0" width="182" height="49"/>
+                                                                <color key="tintColor" systemColor="labelColor"/>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up to see photos and videos from your friends" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqv-dL-iAc">
                                                                 <rect key="frame" x="32.666666666666657" y="63" width="324.66666666666674" height="43"/>
@@ -376,6 +378,9 @@
     <resources>
         <image name="Instagram Logo" width="182" height="49"/>
         <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
