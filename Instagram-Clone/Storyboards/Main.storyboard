@@ -18,14 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RL2-yZ-9pP">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RL2-yZ-9pP">
                                 <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qkx-f0-Dah">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="701"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="451"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fkt-gw-qOM">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="701"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="451"/>
                                                 <subviews>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rCL-mG-XRi">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
@@ -37,7 +37,7 @@
                                                             <size key="itemSize" width="128" height="128"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                            <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells/>
                                                         <connections>
@@ -52,22 +52,16 @@
                                                             <constraint firstAttribute="height" constant="1" id="Ygz-NA-gfr"/>
                                                         </constraints>
                                                     </view>
-                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="B8d-nR-PGy">
-                                                        <rect key="frame" x="0.0" y="101" width="393" height="600"/>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="B8d-nR-PGy">
+                                                        <rect key="frame" x="0.0" y="101" width="393" height="350"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="600" id="Wn5-5H-Mos"/>
+                                                            <constraint firstAttribute="height" constant="350" id="Wn5-5H-Mos"/>
                                                         </constraints>
-                                                        <prototypes>
-                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="479" id="o6R-zS-MUs">
-                                                                <rect key="frame" x="0.0" y="50" width="393" height="479"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o6R-zS-MUs" id="IvD-1P-BCz">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="479"/>
-                                                                    <autoresizingMask key="autoresizingMask"/>
-                                                                </tableViewCellContentView>
-                                                            </tableViewCell>
-                                                        </prototypes>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="Cdn-Ta-R3f" id="WA7-xh-jr0"/>
+                                                            <outlet property="delegate" destination="Cdn-Ta-R3f" id="yoJ-Pl-4Vp"/>
+                                                        </connections>
                                                     </tableView>
                                                 </subviews>
                                             </stackView>
@@ -87,6 +81,9 @@
                                     <constraint firstAttribute="bottom" secondItem="qkx-f0-Dah" secondAttribute="bottom" id="k0g-tv-wcB"/>
                                     <constraint firstItem="qkx-f0-Dah" firstAttribute="top" secondItem="RL2-yZ-9pP" secondAttribute="top" id="wxe-Za-h3H"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="Cdn-Ta-R3f" id="EZv-cE-h4c"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UQf-2x-Xhh"/>
@@ -116,6 +113,9 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="myScrollView" destination="RL2-yZ-9pP" id="Fgk-5p-I3b"/>
+                        <outlet property="postTblHeight" destination="Wn5-5H-Mos" id="xXa-9u-8Pr"/>
+                        <outlet property="postTblView" destination="B8d-nR-PGy" id="xZS-Op-fs3"/>
                         <outlet property="statusCollectionView" destination="rCL-mG-XRi" id="tHy-ud-lWY"/>
                     </connections>
                 </viewController>
@@ -123,21 +123,54 @@
             </objects>
             <point key="canvasLocation" x="-3437.4045801526718" y="1579.5774647887324"/>
         </scene>
-        <!--View Controller-->
+        <!--SearchVC-->
         <scene sceneID="jKo-GJ-uH3">
             <objects>
-                <viewController id="2SG-Kp-0ID" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchVC" id="2SG-Kp-0ID" customClass="SearchVC" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Lu-Sh-wuJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8a-Vu-Yvq">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7p-V6-6Ir">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="2000"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2000" id="nfw-zt-XW0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="f7p-V6-6Ir" secondAttribute="bottom" id="2nA-Xl-d8f"/>
+                                    <constraint firstAttribute="trailing" secondItem="f7p-V6-6Ir" secondAttribute="trailing" id="9b1-Ni-1c0"/>
+                                    <constraint firstItem="f7p-V6-6Ir" firstAttribute="top" secondItem="d8a-Vu-Yvq" secondAttribute="top" id="NUg-gm-T1G"/>
+                                    <constraint firstItem="f7p-V6-6Ir" firstAttribute="leading" secondItem="d8a-Vu-Yvq" secondAttribute="leading" id="fus-gm-eJ8"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="2SG-Kp-0ID" id="oIz-fb-QLd"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ztw-cc-BMc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d8a-Vu-Yvq" firstAttribute="trailing" secondItem="Ztw-cc-BMc" secondAttribute="trailing" id="2rh-LE-hdZ"/>
+                            <constraint firstItem="d8a-Vu-Yvq" firstAttribute="bottom" secondItem="Ztw-cc-BMc" secondAttribute="bottom" id="Qvj-Qg-j2h"/>
+                            <constraint firstItem="d8a-Vu-Yvq" firstAttribute="leading" secondItem="Ztw-cc-BMc" secondAttribute="leading" id="TeA-Oh-c9k"/>
+                            <constraint firstItem="d8a-Vu-Yvq" firstAttribute="top" secondItem="Ztw-cc-BMc" secondAttribute="top" id="hSe-co-Rk1"/>
+                            <constraint firstItem="f7p-V6-6Ir" firstAttribute="width" secondItem="3Lu-Sh-wuJ" secondAttribute="width" id="iEO-sD-sre"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oTn-3w-1Vr"/>
+                    <connections>
+                        <outlet property="scrollView" destination="d8a-Vu-Yvq" id="SX3-Sy-ob5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EaD-pz-Sdl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1234" y="1580"/>
+            <point key="canvasLocation" x="-1234.3511450381679" y="1579.5774647887324"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="aI2-mj-d39">
@@ -240,6 +273,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="V5h-zs-1xM">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance"/>
+                        <navigationBarAppearance key="compactAppearance"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
+                        <navigationBarAppearance key="compactScrollEdgeAppearance"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
