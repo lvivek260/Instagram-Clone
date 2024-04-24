@@ -23,5 +23,14 @@ class YourStatusCell: UICollectionViewCell {
         super.awakeFromNib()
         
     }
+    
+    var status: StatusModel?{
+        didSet{
+            if let status{
+                profileImg.image = status.image
+                lblUserName.text = status.userName
+            }
+        }
+    }
 
 }

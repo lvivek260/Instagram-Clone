@@ -26,6 +26,8 @@ class HomeVC: UIViewController {
     
     var lastContentOffset: CGFloat = 0
     
+    let viewModel = HomeViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationBarIconConfig()
@@ -76,7 +78,7 @@ extension HomeVC{
 
 extension HomeVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return viewModel.status.count + 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -86,6 +88,7 @@ extension HomeVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
             }
         }else{
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: YourStatusCell.id, for: indexPath) as? YourStatusCell{
+                cell.status = viewModel.status[indexPath.row-1]
                 return cell
             }
         }

@@ -30,6 +30,8 @@
 		1F951FC42BD92AA5006B2E22 /* PreviusCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F951FC12BD92AA5006B2E22 /* PreviusCollectionCell.swift */; };
 		1F951FC72BD92AC3006B2E22 /* AddPreviousCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F951FC62BD92AC3006B2E22 /* AddPreviousCollectionCell.xib */; };
 		1F951FC82BD92AC3006B2E22 /* AddPreviousCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F951FC52BD92AC3006B2E22 /* AddPreviousCollectionCell.swift */; };
+		1F951FCA2BD93A76006B2E22 /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F951FC92BD93A76006B2E22 /* StatusModel.swift */; };
+		1F951FCC2BD93A9F006B2E22 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F951FCB2BD93A9F006B2E22 /* HomeViewModel.swift */; };
 		1FAA7FF92BD6396700B1FD21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA7FF82BD6396700B1FD21 /* AppDelegate.swift */; };
 		1FAA7FFB2BD6396700B1FD21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA7FFA2BD6396700B1FD21 /* SceneDelegate.swift */; };
 		1FAA7FFD2BD6396700B1FD21 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA7FFC2BD6396700B1FD21 /* LoginVC.swift */; };
@@ -62,6 +64,8 @@
 		1F951FC22BD92AA5006B2E22 /* PreviusCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviusCollectionCell.xib; sourceTree = "<group>"; };
 		1F951FC52BD92AC3006B2E22 /* AddPreviousCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPreviousCollectionCell.swift; sourceTree = "<group>"; };
 		1F951FC62BD92AC3006B2E22 /* AddPreviousCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPreviousCollectionCell.xib; sourceTree = "<group>"; };
+		1F951FC92BD93A76006B2E22 /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusModel.swift; sourceTree = "<group>"; };
+		1F951FCB2BD93A9F006B2E22 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		1FAA7FF52BD6396700B1FD21 /* Instagram-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAA7FF82BD6396700B1FD21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FAA7FFA2BD6396700B1FD21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 		1F3607EE2BD687C000D4D8FC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1F951FCB2BD93A9F006B2E22 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 		1F3607F02BD687CB00D4D8FC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1F951FC92BD93A76006B2E22 /* StatusModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -400,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F951FCC2BD93A9F006B2E22 /* HomeViewModel.swift in Sources */,
 				1F951FC42BD92AA5006B2E22 /* PreviusCollectionCell.swift in Sources */,
 				1F951FBE2BD8EF6A006B2E22 /* ProfileVC.swift in Sources */,
 				1F951FC82BD92AC3006B2E22 /* AddPreviousCollectionCell.swift in Sources */,
@@ -415,6 +422,7 @@
 				1F3607EA2BD6737400D4D8FC /* UIViewController+Extension.swift in Sources */,
 				1FAA7FFB2BD6396700B1FD21 /* SceneDelegate.swift in Sources */,
 				1F5940C82BD78913007EF654 /* SearchVC.swift in Sources */,
+				1F951FCA2BD93A76006B2E22 /* StatusModel.swift in Sources */,
 				1F3607E82BD672F500D4D8FC /* TabBarController.swift in Sources */,
 				1F3607FC2BD68C8C00D4D8FC /* Cell+Extension.swift in Sources */,
 			);
