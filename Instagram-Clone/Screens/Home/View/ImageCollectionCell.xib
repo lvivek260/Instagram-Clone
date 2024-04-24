@@ -21,10 +21,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="242" height="221"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cmo-bp-cKz" customClass="LottieAnimationView" customModule="Lottie">
+                        <rect key="frame" x="31" y="20.666666666666671" width="180" height="180"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="1Fc-R7-bA9"/>
+                            <constraint firstAttribute="width" constant="180" id="tIp-Ps-YNg"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="like_insta"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
+                <constraint firstItem="cmo-bp-cKz" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="GzN-RQ-fTc"/>
+                <constraint firstItem="cmo-bp-cKz" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Kf2-8f-MnZ"/>
                 <constraint firstAttribute="trailing" secondItem="CHy-ck-dqC" secondAttribute="trailing" id="cmZ-7v-9D3"/>
                 <constraint firstAttribute="bottom" secondItem="CHy-ck-dqC" secondAttribute="bottom" id="nb5-ix-eHM"/>
                 <constraint firstItem="CHy-ck-dqC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ppb-ou-lKN"/>
@@ -33,6 +46,7 @@
             <size key="customSize" width="242" height="221"/>
             <connections>
                 <outlet property="imgView" destination="CHy-ck-dqC" id="yAX-cm-cze"/>
+                <outlet property="lottieView" destination="cmo-bp-cKz" id="sfp-mt-I82"/>
             </connections>
             <point key="canvasLocation" x="276.3358778625954" y="48.943661971830991"/>
         </collectionViewCell>
