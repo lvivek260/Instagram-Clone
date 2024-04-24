@@ -1,16 +1,24 @@
 PODS:
-  - HidingNavigationBar (0.3.0)
+  - IQKeyboardManagerSwift (6.5.15)
+  - lottie-ios (4.3.3)
+  - XLPagerTabStrip (9.1.0)
 
 DEPENDENCIES:
-  - HidingNavigationBar (~> 0.3)
+  - IQKeyboardManagerSwift
+  - lottie-ios
+  - XLPagerTabStrip (~> 9.0)
 
 SPEC REPOS:
   trunk:
-    - HidingNavigationBar
+    - IQKeyboardManagerSwift
+    - lottie-ios
+    - XLPagerTabStrip
 
 SPEC CHECKSUMS:
-  HidingNavigationBar: 6378af14cea27bfef8be73470b081a36d45b87c4
+  IQKeyboardManagerSwift: 79fab21f451441935788dc5d80ded21c32685904
+  lottie-ios: 25e7b2675dad5c3ddad369ac9baab03560c5bfdd
+  XLPagerTabStrip: 27f3bfe23c53b4251c6481b06b1c289458a3fc1d
 
-PODFILE CHECKSUM: 913d811c460a223cf57cca0967de17f9bfdd4275
+PODFILE CHECKSUM: 07b01c18fd0024cb17208d77d0e9920f3e81f6c8
 
 COCOAPODS: 1.11.3

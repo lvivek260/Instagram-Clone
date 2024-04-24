@@ -93,7 +93,7 @@ extension HomeVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return .init(width: 66, height: collectionView.frame.height)
+        return .init(width: 84, height: collectionView.frame.height)
     }
 }
 
@@ -106,6 +106,7 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate{
         guard let cell = tableView.dequeueReusableCell(withIdentifier: PostTblCell.id, for: indexPath) as? PostTblCell else{
             fatalError()
         }
+        cell.images = [._1, ._2, ._3, ._4]
         return cell
     }
     
@@ -120,28 +121,28 @@ extension HomeVC: UIScrollViewDelegate{
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         guard scrollView == myScrollView else{ return }
         
-        let currentOffsetY = scrollView.contentOffset.y + 20
-        
-        if currentOffsetY > lastContentOffset{
-            // Scrolling down
-            if navigationController?.isNavigationBarHidden == false {
-                navigationController?.setNavigationBarHidden(true, animated: true)
-            }
-            UIView.animate(withDuration: 0.3) {
-                self.navigationController?.navigationBar.alpha = 0
-            }
-            lastContentOffset = currentOffsetY
-           
-        } else if currentOffsetY < lastContentOffset {
-            // Scrolling up
-            if navigationController?.isNavigationBarHidden == true {
-                navigationController?.setNavigationBarHidden(false, animated: true)
-            }
-            UIView.animate(withDuration: 0.3) {
-                self.navigationController?.navigationBar.alpha = 1
-            }
-            lastContentOffset = currentOffsetY
-        }
+//        let currentOffsetY = scrollView.contentOffset.y + 20
+//        
+//        if currentOffsetY > lastContentOffset{
+//            // Scrolling down
+//            if navigationController?.isNavigationBarHidden == false {
+//                navigationController?.setNavigationBarHidden(true, animated: true)
+//            }
+//            UIView.animate(withDuration: 0.3) {
+//                self.navigationController?.navigationBar.alpha = 0
+//            }
+//            lastContentOffset = currentOffsetY
+//           
+//        } else if currentOffsetY < lastContentOffset {
+//            // Scrolling up
+//            if navigationController?.isNavigationBarHidden == true {
+//                navigationController?.setNavigationBarHidden(false, animated: true)
+//            }
+//            UIView.animate(withDuration: 0.3) {
+//                self.navigationController?.navigationBar.alpha = 1
+//            }
+//            lastContentOffset = currentOffsetY
+ //       }
     }
 }
 

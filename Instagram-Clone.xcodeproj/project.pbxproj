@@ -22,6 +22,9 @@
 		1F5940C52BD77B8A007EF654 /* PostTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5940C42BD77B8A007EF654 /* PostTblCell.xib */; };
 		1F5940C62BD77B8A007EF654 /* PostTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5940C32BD77B8A007EF654 /* PostTblCell.swift */; };
 		1F5940C82BD78913007EF654 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5940C72BD78913007EF654 /* SearchVC.swift */; };
+		1F5940CC2BD7C8B7007EF654 /* ImageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5940CB2BD7C8B7007EF654 /* ImageCollectionCell.xib */; };
+		1F5940CD2BD7C8B7007EF654 /* ImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5940CA2BD7C8B7007EF654 /* ImageCollectionCell.swift */; };
+		1F951FBB2BD8D4F6006B2E22 /* like_insta.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F951FBA2BD8D4F6006B2E22 /* like_insta.json */; };
 		1FAA7FF92BD6396700B1FD21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA7FF82BD6396700B1FD21 /* AppDelegate.swift */; };
 		1FAA7FFB2BD6396700B1FD21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA7FFA2BD6396700B1FD21 /* SceneDelegate.swift */; };
 		1FAA7FFD2BD6396700B1FD21 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA7FFC2BD6396700B1FD21 /* LoginVC.swift */; };
@@ -46,6 +49,9 @@
 		1F5940C32BD77B8A007EF654 /* PostTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTblCell.swift; sourceTree = "<group>"; };
 		1F5940C42BD77B8A007EF654 /* PostTblCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTblCell.xib; sourceTree = "<group>"; };
 		1F5940C72BD78913007EF654 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		1F5940CA2BD7C8B7007EF654 /* ImageCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionCell.swift; sourceTree = "<group>"; };
+		1F5940CB2BD7C8B7007EF654 /* ImageCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionCell.xib; sourceTree = "<group>"; };
+		1F951FBA2BD8D4F6006B2E22 /* like_insta.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = like_insta.json; sourceTree = "<group>"; };
 		1FAA7FF52BD6396700B1FD21 /* Instagram-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAA7FF82BD6396700B1FD21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FAA7FFA2BD6396700B1FD21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +111,8 @@
 				1F3607F82BD6883400D4D8FC /* YourStatusCell.xib */,
 				1F5940C32BD77B8A007EF654 /* PostTblCell.swift */,
 				1F5940C42BD77B8A007EF654 /* PostTblCell.xib */,
+				1F5940CA2BD7C8B7007EF654 /* ImageCollectionCell.swift */,
+				1F5940CB2BD7C8B7007EF654 /* ImageCollectionCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +179,7 @@
 		1FB06BB82BD63AF0006D91EE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1F951FBA2BD8D4F6006B2E22 /* like_insta.json */,
 				1FAA80012BD6396800B1FD21 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -242,7 +251,6 @@
 				FC2CDC1A8D99F0284F9E7CFD /* Pods-Instagram-Clone.debug.xcconfig */,
 				E0A2161707BD80E2D52A7B35 /* Pods-Instagram-Clone.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -313,6 +321,8 @@
 				1FAA80052BD6396800B1FD21 /* Base in Resources */,
 				1FAA80002BD6396700B1FD21 /* Base in Resources */,
 				1F3607E62BD6717700D4D8FC /* Main.storyboard in Resources */,
+				1F5940CC2BD7C8B7007EF654 /* ImageCollectionCell.xib in Resources */,
+				1F951FBB2BD8D4F6006B2E22 /* like_insta.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +382,7 @@
 				1F5940C62BD77B8A007EF654 /* PostTblCell.swift in Sources */,
 				1F3607E42BD66EB800D4D8FC /* SignUpVC.swift in Sources */,
 				1F3607F52BD6881600D4D8FC /* StatusCell.swift in Sources */,
+				1F5940CD2BD7C8B7007EF654 /* ImageCollectionCell.swift in Sources */,
 				1F3607F92BD6883400D4D8FC /* YourStatusCell.swift in Sources */,
 				1F3607EA2BD6737400D4D8FC /* UIViewController+Extension.swift in Sources */,
 				1FAA7FFB2BD6396700B1FD21 /* SceneDelegate.swift in Sources */,
@@ -440,7 +451,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -455,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -503,7 +514,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -512,7 +523,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

@@ -18,26 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RL2-yZ-9pP">
-                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RL2-yZ-9pP">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qkx-f0-Dah">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="451"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="479"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fkt-gw-qOM">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="451"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="fkt-gw-qOM">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="479"/>
                                                 <subviews>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rCL-mG-XRi">
-                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="120"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="hwl-pP-gLv"/>
+                                                            <constraint firstAttribute="height" constant="120" id="hwl-pP-gLv"/>
                                                         </constraints>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1dp-8J-Jgb">
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="16" minimumInteritemSpacing="0.0" id="1dp-8J-Jgb">
                                                             <size key="itemSize" width="128" height="128"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                            <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                                            <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells/>
                                                         <connections>
@@ -46,14 +46,14 @@
                                                         </connections>
                                                     </collectionView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pG2-Ih-CsU">
-                                                        <rect key="frame" x="0.0" y="100" width="393" height="1"/>
+                                                        <rect key="frame" x="0.0" y="124" width="393" height="1"/>
                                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="Ygz-NA-gfr"/>
                                                         </constraints>
                                                     </view>
                                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="B8d-nR-PGy">
-                                                        <rect key="frame" x="0.0" y="101" width="393" height="350"/>
+                                                        <rect key="frame" x="0.0" y="129" width="393" height="350"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="350" id="Wn5-5H-Mos"/>
@@ -92,7 +92,7 @@
                             <constraint firstItem="UQf-2x-Xhh" firstAttribute="trailing" secondItem="RL2-yZ-9pP" secondAttribute="trailing" id="Eia-HE-y5E"/>
                             <constraint firstAttribute="bottom" secondItem="RL2-yZ-9pP" secondAttribute="bottom" id="NZU-Qp-AUH"/>
                             <constraint firstItem="qkx-f0-Dah" firstAttribute="width" secondItem="O8f-XX-qCX" secondAttribute="width" id="YrY-1k-MAo"/>
-                            <constraint firstItem="RL2-yZ-9pP" firstAttribute="top" secondItem="UQf-2x-Xhh" secondAttribute="top" id="adg-N9-akR"/>
+                            <constraint firstItem="RL2-yZ-9pP" firstAttribute="top" secondItem="O8f-XX-qCX" secondAttribute="top" id="adg-N9-akR"/>
                             <constraint firstItem="RL2-yZ-9pP" firstAttribute="leading" secondItem="UQf-2x-Xhh" secondAttribute="leading" id="yOM-Xr-nLN"/>
                         </constraints>
                     </view>
