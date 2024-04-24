@@ -25,6 +25,7 @@
 		1F5940CC2BD7C8B7007EF654 /* ImageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5940CB2BD7C8B7007EF654 /* ImageCollectionCell.xib */; };
 		1F5940CD2BD7C8B7007EF654 /* ImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5940CA2BD7C8B7007EF654 /* ImageCollectionCell.swift */; };
 		1F951FBB2BD8D4F6006B2E22 /* like_insta.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F951FBA2BD8D4F6006B2E22 /* like_insta.json */; };
+		1F951FBE2BD8EF6A006B2E22 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F951FBD2BD8EF6A006B2E22 /* ProfileVC.swift */; };
 		1FAA7FF92BD6396700B1FD21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA7FF82BD6396700B1FD21 /* AppDelegate.swift */; };
 		1FAA7FFB2BD6396700B1FD21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA7FFA2BD6396700B1FD21 /* SceneDelegate.swift */; };
 		1FAA7FFD2BD6396700B1FD21 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA7FFC2BD6396700B1FD21 /* LoginVC.swift */; };
@@ -52,6 +53,7 @@
 		1F5940CA2BD7C8B7007EF654 /* ImageCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionCell.swift; sourceTree = "<group>"; };
 		1F5940CB2BD7C8B7007EF654 /* ImageCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionCell.xib; sourceTree = "<group>"; };
 		1F951FBA2BD8D4F6006B2E22 /* like_insta.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = like_insta.json; sourceTree = "<group>"; };
+		1F951FBD2BD8EF6A006B2E22 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		1FAA7FF52BD6396700B1FD21 /* Instagram-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAA7FF82BD6396700B1FD21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FAA7FFA2BD6396700B1FD21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,14 @@
 			path = SearchVC;
 			sourceTree = "<group>";
 		};
+		1F951FBC2BD8EF2E006B2E22 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1F951FBD2BD8EF6A006B2E22 /* ProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		1FAA7FEC2BD6396700B1FD21 = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +202,7 @@
 				1FB06BBE2BD63CA8006D91EE /* Login */,
 				1F3607ED2BD681E600D4D8FC /* Home */,
 				1F5940C92BD7891A007EF654 /* SearchVC */,
+				1F951FBC2BD8EF2E006B2E22 /* Profile */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -375,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F951FBE2BD8EF6A006B2E22 /* ProfileVC.swift in Sources */,
 				1F3607E22BD66AC100D4D8FC /* AppStoryboard.swift in Sources */,
 				1F3607EC2BD681DE00D4D8FC /* HomeVC.swift in Sources */,
 				1FAA7FFD2BD6396700B1FD21 /* LoginVC.swift in Sources */,

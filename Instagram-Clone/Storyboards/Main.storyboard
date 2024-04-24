@@ -204,21 +204,46 @@
             </objects>
             <point key="canvasLocation" x="3502" y="1629"/>
         </scene>
-        <!--View Controller-->
+        <!--ProfileVC-->
         <scene sceneID="4KM-DT-eW9">
             <objects>
-                <viewController id="HkG-EL-O8C" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileVC" id="HkG-EL-O8C" customClass="ProfileVC" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TSZ-ta-QBB">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FVx-Hg-IHQ">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="BSO-9T-zUH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FVx-Hg-IHQ" firstAttribute="top" secondItem="TSZ-ta-QBB" secondAttribute="top" id="5tj-Jw-DYB"/>
+                            <constraint firstAttribute="bottom" secondItem="FVx-Hg-IHQ" secondAttribute="bottom" id="Mi0-eZ-Grp"/>
+                            <constraint firstItem="FVx-Hg-IHQ" firstAttribute="trailing" secondItem="BSO-9T-zUH" secondAttribute="trailing" id="YiP-00-HQE"/>
+                            <constraint firstItem="FVx-Hg-IHQ" firstAttribute="leading" secondItem="BSO-9T-zUH" secondAttribute="leading" id="wNb-nl-JBb"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="T8y-MC-k03"/>
+                    <navigationItem key="navigationItem" id="T8y-MC-k03">
+                        <rightBarButtonItems>
+                            <barButtonItem style="plain" id="V98-NX-hCl">
+                                <imageReference key="image" image="list.dash" catalog="system" symbolScale="large"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="Add" id="HsB-dp-aMx">
+                                <color key="tintColor" systemColor="labelColor"/>
+                            </barButtonItem>
+                            <barButtonItem title="Item" id="nWQ-cW-XMT">
+                                <imageReference key="image" image="at.circle.fill" catalog="system" symbolScale="large"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AsO-dA-b6S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5712" y="1629"/>
+            <point key="canvasLocation" x="5709.160305343511" y="1628.8732394366198"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="toR-oa-PFG">
@@ -348,9 +373,11 @@
     <resources>
         <image name="Add" width="24" height="24"/>
         <image name="Messenger" width="24" height="24"/>
+        <image name="at.circle.fill" catalog="system" width="128" height="123"/>
         <image name="heart" catalog="system" width="128" height="107"/>
         <image name="home" width="22" height="25"/>
         <image name="homeSelected" width="22" height="24"/>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="profile" width="24" height="24"/>
         <image name="reel" width="24" height="24"/>
         <image name="search" width="25" height="25"/>

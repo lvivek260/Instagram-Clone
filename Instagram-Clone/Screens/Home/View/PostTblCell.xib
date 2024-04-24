@@ -95,6 +95,9 @@
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <imageReference key="image" image="heart" catalog="system" symbolScale="large"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="likeButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="X3G-yQ-KMr"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCM-s4-zCW">
                                                 <rect key="frame" x="40" y="0.0" width="24" height="24"/>
@@ -135,6 +138,9 @@
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Save"/>
+                                                <connections>
+                                                    <action selector="saveButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ajw-99-29M"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -213,8 +219,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="likeButton" destination="9SN-Lr-oNO" id="y4r-4b-Dm0"/>
                 <outlet property="pageControl" destination="RvG-QG-tBb" id="qIN-Bn-uN6"/>
                 <outlet property="postCollection" destination="sI5-xe-g3c" id="t1D-IH-lE2"/>
+                <outlet property="saveButton" destination="Vl2-C2-5Wu" id="wOi-Fg-Wzn"/>
             </connections>
             <point key="canvasLocation" x="-419.08396946564886" y="310.21126760563379"/>
         </tableViewCell>

@@ -19,6 +19,8 @@ class ImageCollectionCell: UICollectionViewCell {
         }
     }
     
+    var isLikeHandler : ()->Void = {}
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         let tap = UITapGestureRecognizer(target: self, action: #selector(postDubbleTap))
@@ -28,6 +30,7 @@ class ImageCollectionCell: UICollectionViewCell {
     }
     
     @objc func postDubbleTap(){
+        isLikeHandler()
         self.lottieView.isHidden = false
         lottieView.play(){ completed in
             self.lottieView.isHidden = true

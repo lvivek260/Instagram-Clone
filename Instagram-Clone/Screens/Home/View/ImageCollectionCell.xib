@@ -51,4 +51,7 @@
             <point key="canvasLocation" x="276.3358778625954" y="48.943661971830991"/>
         </collectionViewCell>
     </objects>
+    <designables>
+        <designable name="cmo-bp-cKz"/>
+    </designables>
 </document>

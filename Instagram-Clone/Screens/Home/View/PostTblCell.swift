@@ -26,6 +26,27 @@ class PostTblCell: UITableViewCell {
             postCollection.reloadData()
         }
     }
+    
+    var isLike = false{
+        didSet{
+            likeButton.imageView?.image = UIImage(systemName: isLike ? "heart.fill" : "heart")
+        }
+    }
+    @IBOutlet weak var likeButton: UIButton!
+    @IBAction func likeButtonClick(_ sender: UIButton) {
+        isLike.toggle()
+    }
+    
+    var isSave = false{
+        didSet{
+            saveButton.imageView?.image = self.isSave ? UIImage(systemName: "bookmark.fill") : .save
+        }
+    }
+    @IBOutlet weak var saveButton: UIButton!
+    @IBAction func saveButtonClick(_ sender: UIButton) {
+        isSave.toggle()
+    }
+    
 }
 
 extension PostTblCell: UICollectionViewDataSource{
@@ -37,6 +58,7 @@ extension PostTblCell: UICollectionViewDataSource{
         guard let cell = postCollection.dequeueReusableCell(withReuseIdentifier: ImageCollectionCell.id, for: indexPath) as? ImageCollectionCell else {
             fatalError()
         }
+        cell.isLikeHandler = { self.isLike = true }
         cell.imgView.image = images[indexPath.row]
         return cell
     }
