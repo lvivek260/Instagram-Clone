@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="41" id="KGk-i7-Jjw" customClass="SearchCell3" customModule="Instagram_Clone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="41"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="41"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JBK-36-f9H">
+                        <rect key="frame" x="0.0" y="0.0" width="325" height="216.66666666666666"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="NmQ-9Q-zRq">
+                                <rect key="frame" x="0.0" y="0.0" width="108.33333333333333" height="216.66666666666666"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="OMi-rs-MjA">
+                                        <rect key="frame" x="0.0" y="0.0" width="108.33333333333333" height="216.66666666666666"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="P0f-JN-NaM">
+                                <rect key="frame" x="108.33333333333334" y="0.0" width="108.33333333333334" height="216.66666666666666"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="sWS-Ph-iRG">
+                                        <rect key="frame" x="0.0" y="0.0" width="108.33333333333333" height="108.33333333333333"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="sWS-Ph-iRG" secondAttribute="height" id="a0n-u9-bLM"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="eCw-V2-xEc">
+                                        <rect key="frame" x="0.0" y="108.33333333333334" width="108.33333333333333" height="108.33333333333334"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="eCw-V2-xEc" secondAttribute="height" id="xK1-hV-2No"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jIc-bO-0DG">
+                                <rect key="frame" x="216.66666666666666" y="0.0" width="108.33333333333334" height="216.66666666666666"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="74" translatesAutoresizingMaskIntoConstraints="NO" id="uof-PV-Eze">
+                                        <rect key="frame" x="0.0" y="0.0" width="108.33333333333333" height="108.33333333333333"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="uof-PV-Eze" secondAttribute="height" id="PV7-Hx-fNx"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="P2" translatesAutoresizingMaskIntoConstraints="NO" id="8CQ-LD-9Pz">
+                                        <rect key="frame" x="0.0" y="108.33333333333334" width="108.33333333333333" height="108.33333333333334"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="8CQ-LD-9Pz" secondAttribute="height" id="C2Y-SU-nXa"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="JBK-36-f9H" secondAttribute="trailing" id="3sy-94-fEN"/>
+                    <constraint firstItem="JBK-36-f9H" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="FDr-Ka-gIo"/>
+                    <constraint firstItem="JBK-36-f9H" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Kbu-di-Afq"/>
+                    <constraint firstAttribute="bottom" secondItem="JBK-36-f9H" secondAttribute="bottom" id="wfn-sU-eT7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outletCollection property="imageViews" destination="OMi-rs-MjA" collectionClass="NSMutableArray" id="sfP-JR-mil"/>
+                <outletCollection property="imageViews" destination="sWS-Ph-iRG" collectionClass="NSMutableArray" id="HLt-w4-xc8"/>
+                <outletCollection property="imageViews" destination="eCw-V2-xEc" collectionClass="NSMutableArray" id="rWc-at-P1I"/>
+                <outletCollection property="imageViews" destination="8CQ-LD-9Pz" collectionClass="NSMutableArray" id="ZxX-oA-AfJ"/>
+                <outletCollection property="imageViews" destination="uof-PV-Eze" collectionClass="NSMutableArray" id="bdJ-PT-aks"/>
+            </connections>
+            <point key="canvasLocation" x="297" y="-15"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="1" width="338" height="601"/>
+        <image name="2" width="263" height="148"/>
+        <image name="3" width="626" height="358"/>
+        <image name="74" width="256" height="256"/>
+        <image name="P2" width="417" height="626"/>
+    </resources>
+</document>

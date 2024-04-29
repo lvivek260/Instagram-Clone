@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="167" id="KGk-i7-Jjw" customClass="SearchCell1" customModule="Instagram_Clone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="444" height="167"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="444" height="167"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UC1-oQ-xAy">
+                        <rect key="frame" x="0.0" y="0.0" width="444" height="296"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Lnd-2H-VPg">
+                                <rect key="frame" x="0.0" y="0.0" width="148" height="296"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="xwz-4l-xeB">
+                                        <rect key="frame" x="0.0" y="0.0" width="148" height="148"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="xwz-4l-xeB" secondAttribute="height" multiplier="1:1" id="ekl-Ae-3pS"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="2DU-uS-dhq">
+                                        <rect key="frame" x="0.0" y="148" width="148" height="148"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="2DU-uS-dhq" secondAttribute="height" multiplier="1:1" id="nd9-7g-kHg"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZKp-Ph-AFp">
+                                <rect key="frame" x="148" y="0.0" width="148" height="296"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="C9s-wv-Y6J">
+                                        <rect key="frame" x="0.0" y="0.0" width="148" height="148"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="C9s-wv-Y6J" secondAttribute="height" id="jHk-7c-hER"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="k0E-RE-E2v">
+                                        <rect key="frame" x="0.0" y="148" width="148" height="148"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="k0E-RE-E2v" secondAttribute="height" id="QAB-FS-oOA"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8KO-cQ-2tR">
+                                <rect key="frame" x="296" y="0.0" width="148" height="296"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="74" translatesAutoresizingMaskIntoConstraints="NO" id="9R7-Hp-d22">
+                                        <rect key="frame" x="0.0" y="0.0" width="148" height="148"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="9R7-Hp-d22" secondAttribute="height" id="b3z-iA-rB2"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="P1" translatesAutoresizingMaskIntoConstraints="NO" id="ZzU-ut-plg">
+                                        <rect key="frame" x="0.0" y="148" width="148" height="148"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ZzU-ut-plg" secondAttribute="height" id="8Ab-kt-Og0"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UC1-oQ-xAy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9sZ-Hh-bzB"/>
+                    <constraint firstAttribute="trailing" secondItem="UC1-oQ-xAy" secondAttribute="trailing" id="Hzo-f5-W2D"/>
+                    <constraint firstAttribute="bottom" secondItem="UC1-oQ-xAy" secondAttribute="bottom" id="le3-zQ-VVJ"/>
+                    <constraint firstItem="UC1-oQ-xAy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yhu-Uv-vni"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outletCollection property="imageViews" destination="xwz-4l-xeB" collectionClass="NSMutableArray" id="31a-Wu-WjW"/>
+                <outletCollection property="imageViews" destination="2DU-uS-dhq" collectionClass="NSMutableArray" id="lnp-nR-7z7"/>
+                <outletCollection property="imageViews" destination="C9s-wv-Y6J" collectionClass="NSMutableArray" id="d9I-WF-Dgi"/>
+                <outletCollection property="imageViews" destination="k0E-RE-E2v" collectionClass="NSMutableArray" id="XDY-hO-nWE"/>
+                <outletCollection property="imageViews" destination="9R7-Hp-d22" collectionClass="NSMutableArray" id="gnz-ql-byo"/>
+                <outletCollection property="imageViews" destination="ZzU-ut-plg" collectionClass="NSMutableArray" id="WFW-Mp-C23"/>
+            </connections>
+            <point key="canvasLocation" x="295" y="18"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="1" width="338" height="601"/>
+        <image name="2" width="263" height="148"/>
+        <image name="3" width="626" height="358"/>
+        <image name="4" width="626" height="418"/>
+        <image name="74" width="256" height="256"/>
+        <image name="P1" width="539" height="360"/>
+    </resources>
+</document>
