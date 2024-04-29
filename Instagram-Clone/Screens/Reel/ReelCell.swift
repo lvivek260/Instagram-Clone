@@ -6,12 +6,42 @@
 //
 
 import UIKit
+import AVKit
 
 class ReelCell: UICollectionViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblSubTitle: UILabel!
+    @IBOutlet weak var videoView: UIView!
+    
+    var player: AVPlayer?
+    var playerLayer: AVPlayerLayer?
+    
+    var reel: ReelModel? {
+        didSet {
+            if let reel = reel {
+                lblTitle.text = reel.title
+                lblSubTitle.text = reel.description
+                
+                // Initialize AVPlayer with the video URL
+                player = AVPlayer(url: URL(string: reel.sources)!)
+                playerLayer = AVPlayerLayer(player: player)
+              
+                // Add AVPlayerLayer to the view's layer
+                if let playerLayer = playerLayer {
+                    playerLayer.frame = videoView.bounds
+                    playerLayer.videoGravity = .resizeAspectFill
+                    self.videoView.layer.addSublayer(playerLayer)
+                }
+            }
+        }
     }
-
+    
+    func playVideo(){
+        player?.play()
+    }
+   
+    func pauseVideo(){
+        player?.pause()
+    }
 }
