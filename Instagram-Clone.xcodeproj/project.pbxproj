@@ -25,6 +25,9 @@
 		1F4E01B72BDF9FEC0025966C /* SearchCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E01B42BDF9FEC0025966C /* SearchCell2.swift */; };
 		1F4E01BC2BDFA0110025966C /* SearchCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F4E01BB2BDFA0110025966C /* SearchCell3.xib */; };
 		1F4E01BD2BDFA0110025966C /* SearchCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E01BA2BDFA0110025966C /* SearchCell3.swift */; };
+		1F4E01C02BDFAFFB0025966C /* ReelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E01BF2BDFAFFB0025966C /* ReelVC.swift */; };
+		1F4E01C32BDFB0DF0025966C /* ReelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F4E01C22BDFB0DF0025966C /* ReelCell.xib */; };
+		1F4E01C42BDFB0DF0025966C /* ReelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E01C12BDFB0DF0025966C /* ReelCell.swift */; };
 		1F5940C52BD77B8A007EF654 /* PostTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5940C42BD77B8A007EF654 /* PostTblCell.xib */; };
 		1F5940C62BD77B8A007EF654 /* PostTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5940C32BD77B8A007EF654 /* PostTblCell.swift */; };
 		1F5940C82BD78913007EF654 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5940C72BD78913007EF654 /* SearchVC.swift */; };
@@ -65,6 +68,9 @@
 		1F4E01B52BDF9FEC0025966C /* SearchCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell2.xib; sourceTree = "<group>"; };
 		1F4E01BA2BDFA0110025966C /* SearchCell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell3.swift; sourceTree = "<group>"; };
 		1F4E01BB2BDFA0110025966C /* SearchCell3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell3.xib; sourceTree = "<group>"; };
+		1F4E01BF2BDFAFFB0025966C /* ReelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelVC.swift; sourceTree = "<group>"; };
+		1F4E01C12BDFB0DF0025966C /* ReelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelCell.swift; sourceTree = "<group>"; };
+		1F4E01C22BDFB0DF0025966C /* ReelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReelCell.xib; sourceTree = "<group>"; };
 		1F5940C32BD77B8A007EF654 /* PostTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTblCell.swift; sourceTree = "<group>"; };
 		1F5940C42BD77B8A007EF654 /* PostTblCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTblCell.xib; sourceTree = "<group>"; };
 		1F5940C72BD78913007EF654 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
@@ -165,6 +171,16 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		1F4E01BE2BDFAFCC0025966C /* Reel */ = {
+			isa = PBXGroup;
+			children = (
+				1F4E01BF2BDFAFFB0025966C /* ReelVC.swift */,
+				1F4E01C12BDFB0DF0025966C /* ReelCell.swift */,
+				1F4E01C22BDFB0DF0025966C /* ReelCell.xib */,
+			);
+			path = Reel;
+			sourceTree = "<group>";
+		};
 		1F5940C92BD7891A007EF654 /* SearchVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +262,7 @@
 				1FB06BBE2BD63CA8006D91EE /* Login */,
 				1F3607ED2BD681E600D4D8FC /* Home */,
 				1F5940C92BD7891A007EF654 /* SearchVC */,
+				1F4E01BE2BDFAFCC0025966C /* Reel */,
 				1F951FBC2BD8EF2E006B2E22 /* Profile */,
 			);
 			path = Screens;
@@ -369,6 +386,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F4E01C32BDFB0DF0025966C /* ReelCell.xib in Resources */,
 				1F951FC72BD92AC3006B2E22 /* AddPreviousCollectionCell.xib in Resources */,
 				1FAA80022BD6396800B1FD21 /* Assets.xcassets in Resources */,
 				1F4E01B62BDF9FEC0025966C /* SearchCell2.xib in Resources */,
@@ -436,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F951FCC2BD93A9F006B2E22 /* HomeViewModel.swift in Sources */,
+				1F4E01C42BDFB0DF0025966C /* ReelCell.swift in Sources */,
 				1F951FC42BD92AA5006B2E22 /* PreviusCollectionCell.swift in Sources */,
 				1F951FBE2BD8EF6A006B2E22 /* ProfileVC.swift in Sources */,
 				1F951FC82BD92AC3006B2E22 /* AddPreviousCollectionCell.swift in Sources */,
@@ -453,6 +472,7 @@
 				1FAA7FFB2BD6396700B1FD21 /* SceneDelegate.swift in Sources */,
 				1F4E01B32BDF9FDE0025966C /* SearchCell1.swift in Sources */,
 				1F5940C82BD78913007EF654 /* SearchVC.swift in Sources */,
+				1F4E01C02BDFAFFB0025966C /* ReelVC.swift in Sources */,
 				1F951FCA2BD93A76006B2E22 /* StatusModel.swift in Sources */,
 				1F4E01BD2BDFA0110025966C /* SearchCell3.swift in Sources */,
 				1F3607E82BD672F500D4D8FC /* TabBarController.swift in Sources */,

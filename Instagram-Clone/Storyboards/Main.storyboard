@@ -158,21 +158,48 @@
             </objects>
             <point key="canvasLocation" x="-1234.3511450381679" y="1579.5774647887324"/>
         </scene>
-        <!--View Controller-->
+        <!--ReelVC-->
         <scene sceneID="aI2-mj-d39">
             <objects>
-                <viewController id="g7r-zg-XgN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReelVC" id="g7r-zg-XgN" customClass="ReelVC" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KcL-oz-xvY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="X3H-jg-Xf7">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Zza-jt-OSC">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="g7r-zg-XgN" id="7DC-oc-oju"/>
+                                    <outlet property="delegate" destination="g7r-zg-XgN" id="Lel-Nz-y22"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="RUN-Wf-KWV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X3H-jg-Xf7" firstAttribute="leading" secondItem="RUN-Wf-KWV" secondAttribute="leading" id="Ghc-DE-ONF"/>
+                            <constraint firstItem="RUN-Wf-KWV" firstAttribute="trailing" secondItem="X3H-jg-Xf7" secondAttribute="trailing" id="JCy-uY-YHr"/>
+                            <constraint firstItem="RUN-Wf-KWV" firstAttribute="bottom" secondItem="X3H-jg-Xf7" secondAttribute="bottom" id="VvM-bR-O7Q"/>
+                            <constraint firstItem="X3H-jg-Xf7" firstAttribute="top" secondItem="KcL-oz-xvY" secondAttribute="top" id="sCS-kd-SmS"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="reel" selectedImage="reel" id="JXZ-iL-bOu"/>
                     <navigationItem key="navigationItem" id="ZKo-JE-NoI"/>
+                    <connections>
+                        <outlet property="reelCollectionView" destination="X3H-jg-Xf7" id="Vo9-EP-8Xv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZaJ-i4-vgo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1260" y="1629"/>
+            <point key="canvasLocation" x="3502" y="830"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Esf-Nq-vUj">
@@ -188,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zwW-fn-jbb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3502" y="1629"/>
+            <point key="canvasLocation" x="1260" y="1629"/>
         </scene>
         <!--ProfileVC-->
         <scene sceneID="4KM-DT-eW9">
@@ -416,7 +443,7 @@
                         <segue destination="9aa-V5-9CK" kind="relationship" relationship="viewControllers" id="yfb-uA-5R8"/>
                         <segue destination="qiQ-1n-vu3" kind="relationship" relationship="viewControllers" id="AcN-lW-w4p"/>
                         <segue destination="gml-cg-d4Z" kind="relationship" relationship="viewControllers" id="7mu-b6-wOt"/>
-                        <segue destination="gKE-e0-Pw5" kind="relationship" relationship="viewControllers" id="QsC-n4-N8a"/>
+                        <segue destination="g7r-zg-XgN" kind="relationship" relationship="viewControllers" id="w3I-OE-9RK"/>
                         <segue destination="jSk-2N-8SC" kind="relationship" relationship="viewControllers" id="0iT-LV-fH1"/>
                     </connections>
                 </tabBarController>
@@ -481,31 +508,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="g7r-zg-XgN" kind="relationship" relationship="rootViewController" id="2Vo-bk-SaL"/>
+                        <segue destination="g6a-aJ-qHC" kind="relationship" relationship="rootViewController" id="CUw-0C-C3h"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e5V-Kl-mzw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1260.3053435114502" y="812.67605633802816"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="jbz-u7-dVG">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gKE-e0-Pw5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="reel" selectedImage="reel" id="PY5-ve-3CC"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="G7l-rs-U1W">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="g6a-aJ-qHC" kind="relationship" relationship="rootViewController" id="IXf-5Y-D0j"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="m9G-0r-89O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3501.5267175572517" y="812.67605633802816"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vlp-JW-uLI">
