@@ -229,10 +229,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1cr-TX-5Ls">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="302.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="614.66666666666663"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="vqS-ag-CTk">
-                                                <rect key="frame" x="16" y="20" width="361" height="262.66666666666669"/>
+                                                <rect key="frame" x="16" y="20" width="361" height="574.66666666666663"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="GZZ-dL-Gok">
                                                         <rect key="frame" x="0.0" y="0.0" width="361" height="138.66666666666666"/>
@@ -375,6 +375,15 @@
                                                             <outlet property="delegate" destination="HkG-EL-O8C" id="qrW-wd-Cxa"/>
                                                         </connections>
                                                     </collectionView>
+                                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xjN-TZ-mAt">
+                                                        <rect key="frame" x="0.0" y="275" width="361" height="300"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="300" id="TWM-wh-JCu"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <segue destination="8FZ-Vb-YKZ" kind="embed" id="fAw-fr-gOn"/>
+                                                        </connections>
+                                                    </containerView>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
@@ -534,6 +543,20 @@
             </objects>
             <point key="canvasLocation" x="5712.2137404580153" y="812.67605633802816"/>
         </scene>
+        <!--Profile Pager Tab StripVC-->
+        <scene sceneID="CTR-dO-fEB">
+            <objects>
+                <viewController storyboardIdentifier="HomePagerTabStripVC" id="8FZ-Vb-YKZ" customClass="ProfilePagerTabStripVC" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KzE-IS-ioV">
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i5C-Cd-D4E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5709" y="2170"/>
+        </scene>
     </scenes>
     <resources>
         <image name="74" width="256" height="256"/>
@@ -552,7 +575,7 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -49,6 +49,11 @@
 		1FAA80002BD6396700B1FD21 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1FAA7FFF2BD6396700B1FD21 /* Base */; };
 		1FAA80022BD6396800B1FD21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FAA80012BD6396800B1FD21 /* Assets.xcassets */; };
 		1FAA80052BD6396800B1FD21 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1FAA80042BD6396800B1FD21 /* Base */; };
+		1FABA10C2BE0F4E6008FB0E2 /* ProfilePagerTabStripVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FABA10B2BE0F4E6008FB0E2 /* ProfilePagerTabStripVC.swift */; };
+		1FABA10E2BE10AE1008FB0E2 /* PostsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FABA10D2BE10AE1008FB0E2 /* PostsVC.swift */; };
+		1FABA1102BE10AF1008FB0E2 /* TagPostsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FABA10F2BE10AF1008FB0E2 /* TagPostsVC.swift */; };
+		1FABA1122BE10B95008FB0E2 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FABA1112BE10B95008FB0E2 /* Profile.storyboard */; };
+		1FABA1142BE10E3D008FB0E2 /* ReelGridVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FABA1132BE10E3D008FB0E2 /* ReelGridVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +101,11 @@
 		1FAA80012BD6396800B1FD21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FAA80042BD6396800B1FD21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FAA80062BD6396900B1FD21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FABA10B2BE0F4E6008FB0E2 /* ProfilePagerTabStripVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePagerTabStripVC.swift; sourceTree = "<group>"; };
+		1FABA10D2BE10AE1008FB0E2 /* PostsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsVC.swift; sourceTree = "<group>"; };
+		1FABA10F2BE10AF1008FB0E2 /* TagPostsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagPostsVC.swift; sourceTree = "<group>"; };
+		1FABA1112BE10B95008FB0E2 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		1FABA1132BE10E3D008FB0E2 /* ReelGridVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelGridVC.swift; sourceTree = "<group>"; };
 		E0A2161707BD80E2D52A7B35 /* Pods-Instagram-Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram-Clone.release.xcconfig"; path = "Target Support Files/Pods-Instagram-Clone/Pods-Instagram-Clone.release.xcconfig"; sourceTree = "<group>"; };
 		FC2CDC1A8D99F0284F9E7CFD /* Pods-Instagram-Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram-Clone.debug.xcconfig"; path = "Target Support Files/Pods-Instagram-Clone/Pods-Instagram-Clone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -204,6 +214,10 @@
 				1F951FC22BD92AA5006B2E22 /* PreviusCollectionCell.xib */,
 				1F951FC52BD92AC3006B2E22 /* AddPreviousCollectionCell.swift */,
 				1F951FC62BD92AC3006B2E22 /* AddPreviousCollectionCell.xib */,
+				1FABA10B2BE0F4E6008FB0E2 /* ProfilePagerTabStripVC.swift */,
+				1FABA10D2BE10AE1008FB0E2 /* PostsVC.swift */,
+				1FABA10F2BE10AF1008FB0E2 /* TagPostsVC.swift */,
+				1FABA1132BE10E3D008FB0E2 /* ReelGridVC.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -248,6 +262,7 @@
 				1FAA7FFE2BD6396700B1FD21 /* Login.storyboard */,
 				1F3607E52BD6717700D4D8FC /* Main.storyboard */,
 				1FAA80032BD6396800B1FD21 /* LaunchScreen.storyboard */,
+				1FABA1112BE10B95008FB0E2 /* Profile.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -402,6 +417,7 @@
 				1FAA80052BD6396800B1FD21 /* Base in Resources */,
 				1FAA80002BD6396700B1FD21 /* Base in Resources */,
 				1F951FC32BD92AA5006B2E22 /* PreviusCollectionCell.xib in Resources */,
+				1FABA1122BE10B95008FB0E2 /* Profile.storyboard in Resources */,
 				1F4E01BC2BDFA0110025966C /* SearchCell3.xib in Resources */,
 				1F3607E62BD6717700D4D8FC /* Main.storyboard in Resources */,
 				1F5940CC2BD7C8B7007EF654 /* ImageCollectionCell.xib in Resources */,
@@ -469,6 +485,7 @@
 				1FAA7FFD2BD6396700B1FD21 /* LoginVC.swift in Sources */,
 				1FAA7FF92BD6396700B1FD21 /* AppDelegate.swift in Sources */,
 				1F4E01C62BDFBFE40025966C /* ReelModel.swift in Sources */,
+				1FABA1142BE10E3D008FB0E2 /* ReelGridVC.swift in Sources */,
 				1F5940C62BD77B8A007EF654 /* PostTblCell.swift in Sources */,
 				1F3607E42BD66EB800D4D8FC /* SignUpVC.swift in Sources */,
 				1F3607F52BD6881600D4D8FC /* StatusCell.swift in Sources */,
@@ -479,12 +496,15 @@
 				1FAA7FFB2BD6396700B1FD21 /* SceneDelegate.swift in Sources */,
 				1F4E01B32BDF9FDE0025966C /* SearchCell1.swift in Sources */,
 				1F5940C82BD78913007EF654 /* SearchVC.swift in Sources */,
+				1FABA10C2BE0F4E6008FB0E2 /* ProfilePagerTabStripVC.swift in Sources */,
 				1F4E01C02BDFAFFB0025966C /* ReelVC.swift in Sources */,
 				1F951FCA2BD93A76006B2E22 /* StatusModel.swift in Sources */,
 				1F4E01BD2BDFA0110025966C /* SearchCell3.swift in Sources */,
 				1F3607E82BD672F500D4D8FC /* TabBarController.swift in Sources */,
 				1F4E01C82BDFBFF10025966C /* ReelViewModel.swift in Sources */,
+				1FABA10E2BE10AE1008FB0E2 /* PostsVC.swift in Sources */,
 				1F3607FC2BD68C8C00D4D8FC /* Cell+Extension.swift in Sources */,
+				1FABA1102BE10AF1008FB0E2 /* TagPostsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
