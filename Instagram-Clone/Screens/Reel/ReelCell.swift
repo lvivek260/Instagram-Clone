@@ -29,12 +29,16 @@ class ReelCell: UICollectionViewCell {
               
                 // Add AVPlayerLayer to the view's layer
                 if let playerLayer = playerLayer {
-                    playerLayer.frame = videoView.bounds
                     playerLayer.videoGravity = .resizeAspectFill
                     self.videoView.layer.addSublayer(playerLayer)
                 }
             }
         }
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        playerLayer?.frame = videoView.bounds
     }
     
     func playVideo(){

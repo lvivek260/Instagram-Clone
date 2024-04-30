@@ -19,10 +19,10 @@ class ReelVC: UIViewController {
     
     let reels = ReelViewModel().reels
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        reelCollectionView.scrollToItem(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
     }
-    
 }
 
 extension ReelVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate{
@@ -47,6 +47,9 @@ extension ReelVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if let reelCell = cell as? ReelCell{
             reelCell.playVideo()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1){
+                reelCell.layoutSubviews()
+            }
         }
     }
     
