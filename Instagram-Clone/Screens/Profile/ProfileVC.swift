@@ -9,6 +9,7 @@ import UIKit
 
 class ProfileVC: UIViewController {
 
+    @IBOutlet weak var containerViewHeight: NSLayoutConstraint!
     @IBOutlet weak var profileImgView: UIImageView!{
         didSet{
             profileImgView.layer.borderWidth = 2
@@ -26,6 +27,16 @@ class ProfileVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ProfilePagerTabStripVC" {
+            if let profilePagerTabStripVC = segue.destination as? ProfilePagerTabStripVC{
+                profilePagerTabStripVC.setHeight = { height in
+                    self.containerViewHeight.constant = height
+                }
+            }
+        }
     }
 
 }

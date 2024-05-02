@@ -10,6 +10,8 @@ import XLPagerTabStrip
 
 class ProfilePagerTabStripVC: ButtonBarPagerTabStripViewController {
     
+    var setHeight: ((_ height: CGFloat)->Void)?
+    
     override func viewDidLoad() {
         configuration()
         super.viewDidLoad()
@@ -46,8 +48,14 @@ class ProfilePagerTabStripVC: ButtonBarPagerTabStripViewController {
     // MARK: - Default override Method
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
         let postVC = AppStoryboard.profile.getViewController(PostsVC.self)
+        postVC.setHeight = setHeight
+        
         let reelGridVc = AppStoryboard.profile.getViewController(ReelGridVC.self)
+        reelGridVc.setHeight = setHeight
+        
         let tagPostsVC = AppStoryboard.profile.getViewController(TagPostsVC.self)
+        tagPostsVC.setHeight = setHeight
+        
         return [postVC, reelGridVc, tagPostsVC]
     }
     
