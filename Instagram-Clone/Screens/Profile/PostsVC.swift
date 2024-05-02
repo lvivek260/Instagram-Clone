@@ -18,6 +18,8 @@ class PostsVC: UIViewController {
     @IBOutlet weak var heightOfCollectionView: NSLayoutConstraint!
     var setHeight: ((_ height: CGFloat)->Void)?
     
+    var posts: [UIImage] = [.P_1, ._1, .P_2, ._2, .P_3, ._3, .P_4, ._4, .P_5, .P_6, ._74, .P_1, ._1, .P_2, ._2, .P_3, ._3, .P_4, ._4, .P_5, .P_6, ._74]
+    
     override func viewWillAppear(_ animated: Bool) {
         postCollectionView.reloadData()
     }
@@ -26,20 +28,21 @@ class PostsVC: UIViewController {
 
 extension PostsVC: UICollectionViewDataSource, UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+        return posts.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = postCollectionView.dequeueReusableCell(withReuseIdentifier: PostProfileCell.id, for: indexPath) as? PostProfileCell else{
             fatalError()
         }
+        cell.imgView.image = posts[indexPath.row]
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.01){ [self] in
             heightOfCollectionView.constant = postCollectionView.contentSize.height
-            setHeight?(heightOfCollectionView.constant)
+            setHeight?(heightOfCollectionView.constant + 50)
         }
     }
 }

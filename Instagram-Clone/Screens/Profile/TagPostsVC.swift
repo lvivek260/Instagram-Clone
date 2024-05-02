@@ -14,6 +14,8 @@ class TagPostsVC: UIViewController {
     @IBOutlet weak var heightOfCollectionView: NSLayoutConstraint!
     var setHeight: ((_ height: CGFloat)->Void)?
     
+    var posts: [UIImage] = [.P_1, .P_2, .P_3, .P_4, .P_5, .P_6]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -25,20 +27,21 @@ class TagPostsVC: UIViewController {
 
 extension TagPostsVC: UICollectionViewDataSource, UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return posts.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = postCollectionView.dequeueReusableCell(withReuseIdentifier: PostProfileCell.id, for: indexPath) as? PostProfileCell else{
             fatalError()
         }
+        cell.imgView.image = posts[indexPath.row]
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.01){ [self] in
             heightOfCollectionView.constant = postCollectionView.contentSize.height
-            setHeight?(heightOfCollectionView.constant)
+            setHeight?(heightOfCollectionView.constant + 50)
         }
     }
 }
