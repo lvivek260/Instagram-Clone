@@ -33,6 +33,7 @@ class TagPostsVC: UIViewController {
 // MARK: - XLPagerTabStrip Title Set
 extension TagPostsVC: IndicatorInfoProvider{
     func indicatorInfo(for pagerTabStripController: XLPagerTabStrip.PagerTabStripViewController) -> XLPagerTabStrip.IndicatorInfo {
-        return IndicatorInfo(image: UIImage(systemName: "person.bubble.fill"))
+        let configuration = UIImage.SymbolConfiguration(weight: .light)
+        return IndicatorInfo(image: UIImage(systemName: "person.bubble.fill", withConfiguration: configuration))
     }
 }

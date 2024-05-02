@@ -19,15 +19,17 @@ class ProfilePagerTabStripVC: ButtonBarPagerTabStripViewController {
     // MARK: - Configurations
     private func configuration(){
         // change selected bar color
-        settings.style.buttonBarBackgroundColor = .white
-        settings.style.buttonBarItemBackgroundColor = .white
+        settings.style.buttonBarBackgroundColor = .systemBackground
+        settings.style.buttonBarItemBackgroundColor = .systemBackground
         
-        settings.style.selectedBarBackgroundColor = .red
+        settings.style.selectedBarBackgroundColor = .label
+        settings.style.selectedBarHeight = 10
         
-        settings.style.buttonBarItemFont = UIFont.systemFont(ofSize: 14)
+        //settings.style.buttonBarItemFont = UIFont.systemFont(ofSize: 14)
+        settings.style.buttonBarHeight = 48
         settings.style.selectedBarHeight = 1.0
         settings.style.buttonBarMinimumLineSpacing = 0
-        settings.style.buttonBarItemTitleColor = .black
+        settings.style.buttonBarItemTitleColor = .label
         settings.style.buttonBarItemsShouldFillAvailableWidth = true
         settings.style.buttonBarLeftContentInset = 0
         settings.style.buttonBarRightContentInset = 0
@@ -35,8 +37,8 @@ class ProfilePagerTabStripVC: ButtonBarPagerTabStripViewController {
         changeCurrentIndexProgressive = { [weak self] (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
             
             guard changeCurrentIndex == true else { return }
-            oldCell?.label.textColor = .black
-            newCell?.label.textColor = .red
+            oldCell?.imageView.tintColor = .label
+            newCell?.imageView.tintColor = .label
         }
     }
     

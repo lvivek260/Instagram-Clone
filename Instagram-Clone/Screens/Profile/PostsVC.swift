@@ -33,6 +33,7 @@ class PostsVC: UIViewController {
 extension PostsVC: IndicatorInfoProvider{
     func indicatorInfo(for pagerTabStripController: XLPagerTabStrip.PagerTabStripViewController) -> XLPagerTabStrip.IndicatorInfo {
        // return IndicatorInfo(title: "Posts")
-        return IndicatorInfo(image: UIImage(systemName: "squareshape.split.3x3"))
+        let configuration = UIImage.SymbolConfiguration(weight: .light)
+        return IndicatorInfo(image: UIImage(systemName: "squareshape.split.3x3", withConfiguration: configuration))
     }
 }

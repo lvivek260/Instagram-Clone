@@ -32,6 +32,7 @@ class ReelGridVC: UIViewController {
 // MARK: - XLPagerTabStrip Title Set
 extension ReelGridVC: IndicatorInfoProvider{
     func indicatorInfo(for pagerTabStripController: XLPagerTabStrip.PagerTabStripViewController) -> XLPagerTabStrip.IndicatorInfo {
-        return IndicatorInfo(image: .reel)
+        let configuration = UIImage.SymbolConfiguration(weight: .light)
+        return IndicatorInfo(image: UIImage(systemName: "video.doorbell", withConfiguration: configuration))
     }
 }
